@@ -1,0 +1,108 @@
+// change name of all placeholder color's here and main.scss
+.home {
+
+     .logo {
+   background: white;
+   height: 100px;
+   width: 200px;
+}
+    .info-section {
+      padding: 54px;
+      width: 35%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      .info-box {
+      padding: 54px;
+      //position: absolute;
+      bottom: 60px;
+      h4 {
+      font-size:  1.2 rem;
+      color: white;
+      margin: 0.7rem 0;
+    }
+      p {
+       font-size: 0.9rem;
+       font-weight: 300;
+       color:white;
+       margin: 0.2rem 0 1.6rem;
+       padding-top: 30px;
+    }
+      }
+
+  .icon-section {
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 2rem;
+      padding: 0 10;
+      &:first-child {
+        padding: 0 10 0 0;
+      }
+    }
+  }
+    }
+    .content-area {
+      height: 100%;
+      margin-left: 35%;
+      width: 65%;
+      background:white;
+      padding: 0 0 0 20%;
+.img-container {
+  top: 56px;
+  width: 30%;
+  display:inline-block;
+  position: relative;
+  height: 100%;
+.img-user {
+  position: absolute;
+  left: -200px;
+  width: 500px;
+  height: calc(100% -112px);
+  background-image: url("https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9%0A&s=23fd7fa023b0a94ae56d226608ed60c0") no-repeat center center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    // background: url("images/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+}
+.profile-section {
+width: 75%;
+display:inline-block;
+vertical-align: top;
+padding: 0 0 0 0;
+max-width: 500px;
+}
+
+
+.profile {
+h1 {
+  font-size: 2.3 rem;
+  font-weight: 500;
+  line-height: 1.2;
+  margin: 0 0 1rem ;
+  span{
+    color: blue;
+  }
+  h5{
+    font-size: 1.1rem;
+    margin: 0 0 2rem;
+
+  }
+
+  p{
+    color: black;
+    font-weight: 300;
+    line-height: 1.4;
+    margin: 0 0 2rem;
+  }
+     }
+   }
+  }
+}

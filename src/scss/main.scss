@@ -1,0 +1,55 @@
+// change names of colors
+@import "reset";
+@import "variables";
+@import "home";
+
+*{
+  box-sizing: border-box;
+}
+
+body,html {
+  background: $color1;
+  font-family: 'Cormorant Garamond', serif;
+  height: 100%;
+  font-size: 18px;
+}
+
+.hambuger-icon{
+  position: fixed;
+  top:36px;
+  right: 36px;
+  padding: 20px;
+  .fa{
+    font-size: 2rem;
+    color: blue;
+  }
+}
+
+.btn-one{
+  background-color: blue;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  text-align: center;
+  color:yellow;
+  padding: 15px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-right: 15px;
+
+}
+.btn-2{
+border: 4px solid blue;
+background-color: white;
+-webkit-border-radius: 30px;
+-moz-border-radius: 30px;
+border-radius: 30px;
+text-align: center;
+color:yellow;
+padding: 12px 27px;
+display: inline-block;
+text-transform: uppercase;
+letter-spacing: 3px;
+
+}
