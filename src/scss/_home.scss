@@ -52,7 +52,7 @@
     height: 100%;
     margin-left: 35%;
     width: 65%;
-    background: #525b68;
+    background: #fff;
     padding: 0 0 0 20%;
 
     .img-container {
@@ -65,20 +65,31 @@
         position: absolute;
         right: 90%;
         top: 5%;
-        width: 400px;
-        height: 500px;
-        background-image: url("https://images.unsplash.com/photo-1457305237443-44c3d5a30b89?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9%0A&s=23fd7fa023b0a94ae56d226608ed60c0");
+        background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=f62df420a9b1f6e33bf40ca4b1af2729");
         background-repeat: no-repeat;
         background-position: center center;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        // background: url("../img/1.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+        right: 150%;
+        top: 5%;
+        width: 375px;
+        height: 550px;
+      }
+
+      .imgClass {
+        transition: scale(1.2);
+      }
+
+      .imgClass:hover {
+        transform: scale(1.2);
+        transition: all 0.5s ease;
       }
     }
   }
@@ -95,11 +106,9 @@
         font-weight: 500;
         line-height: 1.2;
         margin: 0 0 1rem;
-
-      /* span {
+        /* span {
           color: blue;
         }*/
-
         h5 {
           font-size: 1.1rem;
           margin: 0 0 2rem;
