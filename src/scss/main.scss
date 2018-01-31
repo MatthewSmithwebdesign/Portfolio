@@ -16,11 +16,12 @@ html {
   overflow: hidden;
 }
 
-.hambuger-icon {
+.menu-icon {
   position: fixed;
   top: 36px;
   right: 36px;
   padding: 20px;
+  z-index: 11;
 
   .fa {
     font-size: 2rem;
@@ -34,7 +35,7 @@ html {
   -moz-border-radius: 30px;
   border-radius: 30px;
   text-align: center;
-  color: #525b68;
+  color: #2e3035;
   padding: 15px 30px;
   display: inline-block;
   text-transform: uppercase;
@@ -50,10 +51,57 @@ html {
   -moz-border-radius: 30px;
   border-radius: 30px;
   text-align: center;
-  color: #525b68;
+  color: #2e3035;
   padding: 12px 27px;
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: 3px;
   margin-top: 30px;
+}
+
+#menu {
+  color: blue;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(-100%,0,0);
+  z-index: 10;
+  display: fixed;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+
+  nav {
+    width: 400px;
+    text-align: center;
+
+    a {
+      font-size: 3rem;
+      padding: 2.3rem;
+      text-decoration: none;
+      color: white;
+      display: block;
+
+      &:hover {
+        color: black;
+      }
+    }
+  }
+}
+
+.menu-active {
+  .menu-icon {
+    .fa {
+      color: white;
+    }
+  }
+
+  #menu {
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    transform: translate3d(0,0,0);
+  }
 }
