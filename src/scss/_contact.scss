@@ -1,6 +1,6 @@
 // change name of all placeholder color's here and main.scss
 
-.home {}
+.contact {
 
 .info-section {
   padding: 55px;
@@ -20,11 +20,11 @@
     height: 100%;
     width: 30%;
 
-    .img-user {
+    .form-section {
       position: absolute;
-      background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=f62df420a9b1f6e33bf40ca4b1af2729");
-      background-repeat: no-repeat;
-      background-position: center center;
+      background: black;
+      color:white;
+      padding: 46px;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -38,6 +38,30 @@
       top: 5%;
       min-width: 375px;
       height: 82%;
+
+
+      input[type="text"] ,
+      textarea {
+        width: 100%;
+        background: transparent;
+        border: none;
+        border-bottom: 2px, soild white;
+      }
+
+      button [type="submit"]{
+
+        border: none;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        width: 100%;
+        background-color: #7eacf7;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        text-align: center;
+        color: #2e3035;
+        padding: 15px 30px;
+      }
     }
 
     .imgClass {
@@ -82,3 +106,4 @@
       }
     }
   }
+}
