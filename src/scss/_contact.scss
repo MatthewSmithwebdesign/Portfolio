@@ -1,4 +1,4 @@
-// change name of all placeholder color's here and main.scss
+
 
 .contact {
 
@@ -38,14 +38,13 @@
       top: 5%;
       min-width: 375px;
       height: 82%;
-
-
       input[type="text"] ,
       textarea {
         width: 100%;
         background: transparent;
         border: none;
         border-bottom: 2px, soild white;
+
       }
 
       button [type="submit"]{
@@ -63,6 +62,7 @@
         padding: 15px 30px;
       }
     }
+  
 
     .imgClass {
       transition: scale(1.2);
