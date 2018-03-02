@@ -1,108 +1,93 @@
-
-
 .contact {
+  .info-section {
+    padding: 55px;
+    width: 35%;
+  }
 
-.info-section {
-  padding: 55px;
-  width: 35%;
-}
-
-.content-area {
-  height: 100%;
-  margin-left: 35%;
-  width: 65%;
-  background: #fff;
-  padding: 0 0 0 20%;
-
-  .img-container {
-    position: relative;
-    display: inline-block;
+  .content-area {
     height: 100%;
-    width: 30%;
+    margin-left: 35%;
+    width: 65%;
+    background: #fff;
+    padding: 0 0 0 20%;
 
-    .form-section {
-      position: absolute;
-      background: black;
-      color:white;
-      padding: 46px;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
-      right: 120%;
-      top: 5%;
-      min-width: 375px;
-      height: 82%;
-      input[type="text"] ,
-      textarea {
-        width: 100%;
-        background: transparent;
-        border: none;
-        border-bottom: 2px, soild white;
+    .img-container {
+      position: relative;
+      display: inline-block;
+      height: 100%;
+      width: 30%;
 
+      .form-section {
+        position: absolute;
+        background: blue;
+        color: white;
+        padding: 46px;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+        right: 120%;
+        top: 5%;
+        min-width: 375px;
+        height: 82%;
+
+        input[type="text"],
+        textarea {
+          width: 100%;
+          background: transparent;
+          border: none;
+          border-bottom: 2px, soild white;
+          margin-bottom: 2rem;
+          color: white;
+        }
+
+        button[type="submit"] {
+          border: none;
+          font-size: 1.2rem;
+          text-transform: uppercase;
+          width: 100%;
+          background-color: #7eacf7;
+          -webkit-border-radius: 30px;
+          -moz-border-radius: 30px;
+          border-radius: 30px;
+          text-align: center;
+          color: #2e3035;
+          padding: 15px 30px;
+        }
       }
-
-      button [type="submit"]{
-
-        border: none;
-        font-size: 1.2rem;
-        text-transform: uppercase;
-        width: 100%;
-        background-color: #7eacf7;
-        -webkit-border-radius: 30px;
-        -moz-border-radius: 30px;
-        border-radius: 30px;
-        text-align: center;
-        color: #2e3035;
-        padding: 15px 30px;
-      }
-    }
-  
-
-    .imgClass {
-      transition: scale(1.2);
-    }
-
-    .imgClass:hover {
-      transform: scale(1.2);
-      transition: all 0.5s ease;
     }
   }
-}
 
-.profile-section {
-  position: absolute;
-  top: 50%;
-  left: 55%;
-  vertical-align: top;
+  .profile-section {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    vertical-align: top;
 
-  .profile {
-    h1 {
-      font-size: 2rem;
-      font-weight: 500;
-      line-height: 1.2;
-      margin: 0 0 1rem;
-
-      span {
-        color: #7eacf7;
+    .profile {
+      h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 0 0 1rem;
       }
-}
+
       h5 {
         font-size: 1.3rem;
-        margin: 0 0 .8rem;
+        margin: 0 0 0.8rem;
         color: rgba(0,0,0,0.7);
         font-weight: 700;
       }
 
       p {
         color: rgba(0,0,0,0.8);
-       font-weight: 300;
-       margin: 0 0 .4rem !important;
+        font-weight: 300;
+        margin: 0 0 0.4rem !important;
       }
     }
   }
