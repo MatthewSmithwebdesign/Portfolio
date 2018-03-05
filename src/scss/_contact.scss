@@ -36,12 +36,17 @@
         min-width: 375px;
         height: 82%;
 
+        h4{
+          font-size: 1.6rem;
+          margin-bottom: 60px;
+        }
+
         input[type="text"],
         textarea {
           width: 100%;
           background: transparent;
           border: none;
-          border-bottom: 2px, soild white;
+          border-bottom: 2px, soild grey;
           margin-bottom: 2rem;
           color: white;
         }
