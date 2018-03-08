@@ -18,10 +18,12 @@
       width: 30%;
 
       .form-section {
+      //  overflow-y: scroll;
+    //    overflow-x: hidden;
         position: absolute;
         background: #6587bc;
         color: white;
-        padding: 46px;
+        padding: 20px;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
@@ -34,66 +36,70 @@
         right: 120%;
         top: 5%;
         min-width: 375px;
-        height: 82%;
+       height: 82%;
 
-        h4{
-          font-size: 1.6rem;
-          margin-bottom: 60px;
-        }
+       h4{
+         font-size: 1.6rem;
+         margin-bottom: 20px;
+       }
 
-        input[type="text"],
-        textarea {
-          width: 100%;
-          background: transparent;
-          border: none;
-          border-bottom: 2px, soild grey;
-          margin-bottom: 2rem;
-          color: white;
-        }
+       input,
+       textarea {
+         width: 100%;
+         border: none;
+         border-bottom: 2px solid  #7eacf7;
+         margin-bottom: .5rem;
+         padding: 20px !important;
+         font-size: .7rem;
+        text-transform: uppercase;
+        line-height: 1.1;
+       }
 
-        button[type="submit"] {
-          border: none;
-          font-size: 1.2rem;
-          text-transform: uppercase;
-          width: 100%;
-          background-color: #7eacf7;
-          -webkit-border-radius: 30px;
-          -moz-border-radius: 30px;
-          border-radius: 30px;
-          text-align: center;
-          color: #2e3035;
-          padding: 15px 30px;
-        }
-      }
-    }
-  }
 
-  .contact-section {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    vertical-align: top;
+       .btn2 {
+         border: none;
+         font-size: .7rem;
+         text-transform: uppercase;
+         width: 100%;
+         background-color:  #7eacf7;
+         -webkit-border-radius: 20px;
+         -moz-border-radius: 20px;
+         border-radius: 20px;
+         text-align: center;
+         color: #2e3035;
+         padding: 15px 15px;
+       }
+     }
+   }
+ }
 
-    .profile {
-      h1 {
-        font-size: 2rem;
-        font-weight: 500;
-        line-height: 1.2;
-        margin: 0 0 1rem;
-      }
+ .contact-section {
+   position: absolute;
+   top: 45%;
+   left: 55%;
+   vertical-align: top;
+   //padding: 70px;
 
-      h5 {
-        font-size: 1.3rem;
-        margin: 0 0 0.8rem;
-        color: rgba(0,0,0,0.7);
-        font-weight: 700;
-      }
+   .contact-info {
+     h1 {
+       font-size: 2rem;
+       font-weight: 700;
+       line-height: 1.2;
+       margin: 0 0 1rem;
+     }
 
-      p {
-        color: rgba(0,0,0,0.8);
-        font-weight: 300;
-        margin: 0 0 0.4rem !important;
-      }
-    }
-  }
+     h5 {
+       font-size: 1.3rem;
+       margin: 0 0 0.5rem;
+       color: rgba(0,0,0,0.7);
+       font-weight: 700;
+     }
+
+     p {
+       color: rgba(0,0,0,0.8);
+       font-weight: 650;
+       margin: 0 0 0.6rem !important;
+     }
+   }
+ }
 }
