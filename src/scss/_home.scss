@@ -1,84 +1,235 @@
 // change name of all placeholder color's here and main.scss
 
 .home {
+  .info-section {
+    padding: 55px;
+    width: 35%;
+  }
 
-.info-section {
-  padding: 55px;
-  width: 35%;
-}
-
-.content-area {
-  height: 100%;
-  margin-left: 35%;
-  width: 65%;
-  background: #fff;
-  padding: 0 0 0 20%;
-
-  .img-container {
-    position: relative;
-    display: inline-block;
+  .content-area {
     height: 100%;
-    width: 30%;
+    margin-left: 35%;
+    width: 65%;
+    background: #fff;
+    padding: 0 0 0 20%;
 
-    .img-user {
-      position: absolute;
-      background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=f62df420a9b1f6e33bf40ca4b1af2729");
-      background-repeat: no-repeat;
-      background-position: center center;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
-      right: 120%;
-      top: 5%;
-      min-width: 375px;
-      height: 82%;
-    }
+    .img-container {
+      position: relative;
+      display: inline-block;
+      height: 100%;
+      width: 30%;
 
-    .imgClass {
-      transition: scale(1.2);
-    }
+      .img-user {
+        position: absolute;
+        background-image: url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjF9&s=f62df420a9b1f6e33bf40ca4b1af2729");
+        background-repeat: no-repeat;
+        background-position: center center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
+        right: 120%;
+        top: 5%;
+        min-width: 375px;
+        height: 82%;
+      }
 
-    .imgClass:hover {
-      transform: scale(1.2);
-      transition: all 0.5s ease;
+      .imgClass {
+        transition: scale(1.2);
+      }
+
+      .imgClass:hover {
+        transform: scale(1.2);
+        transition: all 0.5s ease;
+      }
     }
   }
-}
 
-.profile-section {
-  position: absolute;
-  top: 50%;
-  left: 55%;
-  vertical-align: top;
+  .profile-section {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    vertical-align: top;
 
-  .profile {
-    h1 {
-      font-size: 2rem;
-      font-weight: 500;
-      line-height: 1.2;
-      margin: 0 0 1rem;
+    .profile {
+      h1 {
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.2;
+        margin: 0 0 1rem;
 
-      span {
-        color: #7eacf7;
+        span {
+          color: #7eacf7;
+        }
       }
-}
+
       h5 {
         font-size: 1.3rem;
-        margin: 0 0 .8rem;
+        margin: 0 0 0.8rem;
         color: rgba(0,0,0,0.7);
         font-weight: 700;
       }
 
       p {
         color: rgba(0,0,0,0.8);
-       font-weight: 300;
-       margin: 0 0 .4rem !important;
+        font-weight: 300;
+        margin: 0 0 0.4rem !important;
+      }
+    }
+  }
+}
+// bootstrap
+@media (max-width: 767px) {
+  .home {
+    .menu-icon {
+      top: -3;
+      right: 20px;
+      color: white;
+
+      .fa {
+        color: white;
+      }
+
+      .content-area {
+        &:after {
+          display: table;
+          clear: both;
+        }
+      }
+    }
+
+    .info-section {
+      //  display: none;
+      padding: 10px 20px;
+      position: static;
+
+      .logo {
+        height: 50px;
+        width: 70px;
+        font-size: 1rem;
+      }
+
+      .info-box {
+        display: none;
+      }
+    }
+
+    .content-area {
+      margin-left: 0;
+      width: 100%;
+
+      .img-container {
+        padding: 56px 20px 0;
+
+        .img-user {
+          position: static;
+          width: 100%;
+        }
+      }
+
+      .profile-section {
+        width: 70%;
+        float: right;
+        padding: 20% 20px 0;
+
+        .btn-2,
+        .btn-one {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 768px) {
+  .home {
+    .content-area {
+      .img-container {
+        padding: 56px 20px 0;
+
+        .img-user {
+          position: static;
+          width: 100%;
+        }
+      }
+
+      .profile-section {
+        width: 70%;
+        float: right;
+        padding: 20% 20px 0;
+      }
+    }
+  }
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+  .home {
+    .content-area {
+      .img-container {
+        padding: 56px 20px 0;
+
+        .img-user {
+          position: static;
+          width: 100%;
+        }
+      }
+
+      .profile-section {
+        width: 70%;
+        float: right;
+        padding: 20% 20px 0;
+      }
+    }
+  }
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .home {
+    .content-area {
+      .img-container {
+        padding: 56px 20px 0;
+        float: left;
+
+        .img-user {
+          //  position: static;
+          //width: 100%;
+        }
+      }
+
+      .profile-section {
+        width: 70%;
+        float: left;
+        padding: 20% 20px 0;
+        max-width: 800px;
+      }
+    }
+  }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .home {
+    .content-area {
+      .img-container {
+        padding: 56px 20px 0;
+        float: left;
+
+        .img-user {
+           position: absolute;
+          width: 100%;
+        }
+      }
+
+      .profile-section {
+        width: 70%;
+        float: left;
+        padding: 20px 60px 0;
+        max-width: 800px;
+      //  padding: 20% 20px 0;
       }
     }
   }
