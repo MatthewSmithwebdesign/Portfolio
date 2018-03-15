@@ -79,11 +79,12 @@
         color: rgba(0,0,0,0.8);
         font-weight: 300;
         margin: 0 0 0.4rem !important;
+
       }
     }
   }
-}
-// bootstrap
+  }
+  //bootstrap
 @media (max-width: 767px) {
   .home {
     .menu-icon {
@@ -96,7 +97,9 @@
       }
 
       .content-area {
+        height: auto;
         &:after {
+          content: "";
           display: table;
           clear: both;
         }
@@ -200,8 +203,8 @@
           //width: 100%;
         }
       }
-
       .profile-section {
+
         width: 70%;
         float: left;
         padding: 20% 20px 0;
@@ -222,8 +225,8 @@
            position: absolute;
           width: 100%;
         }
-      }
 
+      }
       .profile-section {
         width: 70%;
         float: left;
