@@ -85,7 +85,7 @@
   }
   }
   //bootstrap
-@media (max-width: 767px) {
+@media (min-width: 0px) and (max-width: 767px) {
   .home {
     .menu-icon {
       top: -3;
