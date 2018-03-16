@@ -115,7 +115,7 @@
 @media (max-width: 767px) {
   .contact {
     .menu-icon {
-      top: -3;
+      top: 0;
       right: 20px;
       color: white;
 
@@ -194,7 +194,7 @@
 
       .contact-section {
         width: 70%;
-        float: right;
+        float: left;
         padding: 20% 20px 0;
         height: auto;
         overflow: auto;
@@ -206,12 +206,21 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .contact {
     .content-area {
+
+      &:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
       .img-container {
         padding: 56px 20px 0;
+        height: auto;
 
         .form-section {
           position: static;
           width: 100%;
+          height: auto;
+          overflow: auto;
         }
       }
 
