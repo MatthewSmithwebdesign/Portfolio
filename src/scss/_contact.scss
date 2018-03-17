@@ -137,7 +137,6 @@
     .info-section {
       //  display: none;
       padding: 10px 20px;
-      position: static;
 
       .logo {
         height: 50px;
@@ -156,12 +155,11 @@
 
       .img-container {
         width: 100%;
-        padding: 56px 20px 0;
+        padding: 0 !important;
 
         .form-section {
           position: static;
           width: 100%;
-
         }
       }
 
@@ -179,9 +177,47 @@
   }
 }
 // Small devices (landscape phones, 576px and up)
-@media (min-width:0px) and (max-width: 768px) {
+@media (min-width: 0px) and (max-width: 768px) {
   .contact {
+    .menu-icon {
+      top: -3;
+      right: 20px;
+      color: white;
+
+      .fa {
+        color: white;
+      }
+
+      .content-area {
+        //height: auto;
+        &:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+      }
+    }
+
+    .info-section {
+      //  display: none;
+      padding: 10px 20px;
+      position: static;
+
+      .logo {
+        height: 50px;
+        width: 70px;
+        font-size: 1rem;
+      }
+
+      .info-box {
+        display: none;
+      }
+    }
+    overflow-y: auto;
+
     .content-area {
+      padding: 0;
+
       .img-container {
         width: 100%;
         padding: 56px 20px 0;
@@ -193,7 +229,12 @@
       }
 
       .contact-section {
-        width: 70%;
+        position: relative;
+        left: 0;
+        top: 120px;
+        display: block;
+        clear: both;
+        width: auto;
         float: left;
         padding: 20% 20px 0;
         height: auto;
@@ -206,12 +247,15 @@
 @media (min-width: 768px) and (max-width: 991px) {
   .contact {
     .content-area {
+      // margin-left: 0px;
+      padding: 0;
 
       &:after {
         content: "";
         display: table;
         clear: both;
       }
+
       .img-container {
         padding: 56px 20px 0;
         height: auto;
@@ -225,9 +269,11 @@
       }
 
       .contact-section {
-        width: 70%;
+        position: relative;
+        // width: 70%;
         float: right;
         padding: 20% 20px 0;
+        left: 170%;
       }
     }
   }
@@ -236,20 +282,23 @@
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .contact {
     .content-area {
+      margin-left: 50%;
+
       .img-container {
         padding: 56px 20px 0;
         float: left;
-
-        .form-section {
-          //  position: static;
-          //width: 100%;
-        }
+        // .form-section {
+        //   //  position: static;
+        //   //width: 100%;
+        // }
       }
 
       .contact-section {
-        width: 70%;
+        // width: 70%;
         float: left;
-        padding: 20% 20px 0;
+        // margin-left: 0;
+        padding: 20% 20px -50px 0;
+        margin-left: -40%;
         max-width: 800px;
       }
     }
@@ -261,6 +310,7 @@
     .content-area {
       .img-container {
         padding: 56px 20px 0;
+        margin-left: 10%;
         float: left;
 
         .form-section {
@@ -270,7 +320,7 @@
       }
 
       .contact-section {
-        width: 70%;
+        // width: 70%;
         float: left;
         padding: 20px 60px 0;
         max-width: 800px;
