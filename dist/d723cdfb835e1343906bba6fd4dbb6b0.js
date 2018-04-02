@@ -138,11 +138,11 @@ module.exports = reloadCSS;
         module.hot.dispose(reloadCSS);
         module.hot.accept(reloadCSS);
       
-},{"_css_loader":7}],2:[function(require,module,exports) {
+},{"_css_loader":7}],4:[function(require,module,exports) {
 "use strict";
 
 require("../scss/main.scss");
-},{"../scss/main.scss":5}],13:[function(require,module,exports) {
+},{"../scss/main.scss":5}],9:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -162,7 +162,7 @@ module.bundle.Module = Module;
 
 if (!module.bundle.parent && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
-  var ws = new WebSocket('ws://' + hostname + ':' + '63028' + '/');
+  var ws = new WebSocket('ws://' + hostname + ':' + '54545' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
@@ -263,5 +263,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[13,2])
+},{}]},{},[9,4])
 //# sourceMappingURL=/dist/d723cdfb835e1343906bba6fd4dbb6b0.map

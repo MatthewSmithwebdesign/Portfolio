@@ -14,7 +14,7 @@
     padding: 0 0 0 20%;
 
     .img-container {
-      position: relative;
+      position: absolute;
       display: inline-block;
       height: 100%;
       width: 30%;
@@ -96,7 +96,7 @@
       }
 
       .content-area {
-        //height: auto;
+      //  height: auto;
 
         &:after {
           content: "";
@@ -154,7 +154,7 @@
   .home {
     .content-area {
       .img-container {
-        padding: 56px 20px 0;
+       padding: 56px 20px 0;
 
         .img-user {
           position: static;
