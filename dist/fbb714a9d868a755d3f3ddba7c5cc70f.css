@@ -115,7 +115,7 @@ table {
       -o-background-size: cover;
       background-size: cover;
       box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
-      right: 120%;
+      right: 130%;
       top: 5%;
       min-width: 375px;
       height: 82%; }
@@ -210,6 +210,9 @@ table {
   .home .content-area .img-container {
     padding: 56px 20px 0;
     float: left; }
+    .home .content-area .img-container .img-user {
+      position: static;
+      width: 100%; }
   .home .content-area .profile-section {
     width: 70%;
     float: left;
@@ -227,7 +230,8 @@ table {
     width: 70%;
     float: left;
     padding: 20px 60px 0;
-    max-width: 800px; } }
+    max-width: 800px;
+    padding: 20% 20px 0; } }
 
 .resume .info-section {
   padding: 50px;

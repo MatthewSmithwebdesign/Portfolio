@@ -1,4 +1,4 @@
-// change name of all placeholder color's here and main.scss
+
 
 .home {
   .info-section {
@@ -33,7 +33,7 @@
         -o-background-size: cover;
         background-size: cover;
         box-shadow: 10px 10px 0 rgba(0,0,0,0.1);
-        right: 120%;
+        right: 130%;
         top: 5%;
         min-width: 375px;
         height: 82%;
@@ -83,7 +83,7 @@
     }
   }
 }
-//bootstrap
+//media 
 @media (min-width: 0px) and (max-width: 767px) {
   .home {
     .menu-icon {
@@ -204,8 +204,8 @@
         float: left;
 
         .img-user {
-          //  position: static;
-          //width: 100%;
+          position: static;
+          width: 100%;
         }
       }
 
@@ -237,7 +237,7 @@
         float: left;
         padding: 20px 60px 0;
         max-width: 800px;
-        //  padding: 20% 20px 0;
+        padding: 20% 20px 0;
       }
     }
   }
