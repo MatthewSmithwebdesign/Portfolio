@@ -225,13 +225,14 @@ table {
     float: left; }
     .home .content-area .img-container .img-user {
       position: absolute;
-      width: 100%; }
+      width: 100%;
+      margin-right: -120px; }
   .home .content-area .profile-section {
     width: 70%;
     float: left;
     padding: 20px 60px 0;
     max-width: 800px;
-    padding: 20% 20px 0; } }
+    padding: 20% 40px 0; } }
 
 .resume .info-section {
   padding: 50px;

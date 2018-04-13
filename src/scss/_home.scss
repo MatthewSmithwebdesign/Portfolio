@@ -218,17 +218,17 @@
     }
   }
 }
-// Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
   .home {
     .content-area {
       .img-container {
         padding: 56px 20px 0;
         float: left;
-
+        
         .img-user {
           position: absolute;
           width: 100%;
+          margin-right: -120px;
         }
       }
 
@@ -237,7 +237,7 @@
         float: left;
         padding: 20px 60px 0;
         max-width: 800px;
-        padding: 20% 20px 0;
+        padding: 20% 40px 0;
       }
     }
   }

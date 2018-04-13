@@ -142,7 +142,7 @@ module.exports = reloadCSS;
 "use strict";
 
 require("../scss/main.scss");
-},{"../scss/main.scss":3}],8:[function(require,module,exports) {
+},{"../scss/main.scss":3}],16:[function(require,module,exports) {
 
 var global = (1, eval)('this');
 var OldModule = module.bundle.Module;
@@ -263,5 +263,5 @@ function hmrAccept(bundle, id) {
     return hmrAccept(global.require, id);
   });
 }
-},{}]},{},[8,4])
+},{}]},{},[16,4])
 //# sourceMappingURL=/dist/d723cdfb835e1343906bba6fd4dbb6b0.map
